@@ -1,0 +1,20 @@
+{
+    "projectA": {
+        "project_name": "projectA",
+        "user": "mambo4",
+        "server": "sever.company.com:1234",
+        "source_client": "mambo4_projectA_source",
+        "source_root": "C:/projectA/source",
+        "game_client": "mambo4_projectA_game",
+        "game_root": "C:/projectA"
+    },
+    "projectZ": {
+        "project_name": "projectZ",
+        "user": "mambo4",
+        "server": "sever.company.com:1234",
+        "source_client": "mambo4_projectZ_source",
+        "source_root": "C:/projectZ/source",
+        "game_client": "mambo4_projectZ_game",
+        "game_root": "C:/projectZ"
+    }
+}
