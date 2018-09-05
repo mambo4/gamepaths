@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 import json
 import logging
@@ -5,11 +6,19 @@ import getpass
 
 USER=getpass.getuser()
 HOME=os.environ["HOME"]
+=======
+import json
+import logging
+
+>>>>>>> fd773fb7323cda17b727de293665b86209cb4b5c
 
 logger=logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> fd773fb7323cda17b727de293665b86209cb4b5c
 class IdProjectData(object):
     """base class for reading and writing json data"""
 
@@ -25,12 +34,17 @@ class IdProjectData(object):
                 with open(self.file, 'r') as f:
                     self.data =json.load(f)
                 logger.info("loaded {}".format(self.file))
+<<<<<<< HEAD
             except FileNotFoundError as e:
                 logger.info("failed to locate {}:\n{}".format(self.file,e))
                 pass
             except IOError as e:
                 logger.info("failed to load {}:\n{}".format(self.file,e))  
                 pass   
+=======
+            except IOError as e:
+                logger.error("failed to load {}:\n{}".format(self.file,e))
+>>>>>>> fd773fb7323cda17b727de293665b86209cb4b5c
         else:
             logger.warning("no file specified.")
 
@@ -42,6 +56,7 @@ class IdProjectData(object):
             print ("no data")
 
 class IdProjectClient(IdProjectData):
+<<<<<<< HEAD
     
     def __init__(self,file=None):
         self.default_file=os.path.join(HOME,"id_project_data.json")
@@ -64,3 +79,6 @@ class IdProjectClient(IdProjectData):
             logger.info( "default file '{}' could not be found.".format(self.default_file))
             pass
         
+=======
+    pass
+>>>>>>> fd773fb7323cda17b727de293665b86209cb4b5c
