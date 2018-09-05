@@ -1,0 +1,67 @@
+{
+    //roots
+   "game" : "C:/projectname/game",
+   "source" : "C:/project/source/base",
+   "animtools": "C:/animation-pipeline",
+
+//departments
+
+   "animation_source" : "animation"
+   "art_source" : "art"
+   "rigging" : "//id-vault/Animation/RIGGING/project/source/animation")
+   "animation_asset_subfolders" : [
+       'base/assets/mesh',
+       'base/assets/rig',
+   ]
+   "animation_motion_subfolders" : [
+       'base/motion/ambient',
+       'base/motion/combat',
+       'base/motion/death',
+       'base/motion/pain',
+       'base/motion/traversal',
+   ]
+
+   "rigging_subfolders" : ['_master', 'wip']
+   "art_subfolders" : ['handoff', 'master', 'texture', 'wip']
+
+//data
+   "anim_data" : source + '/animation/data')
+
+//md6
+   "md6" : game + "/md6")
+
+//decl roots
+   "decl" : game + "/declTree")
+   "animweb" : decl + "/animWeb/animweb")
+   "md6def" : decl + "/md6Def/md6def")
+   "entitydef" : decl + "/entityDef")
+
+//ai decls
+   "ai_entitydef" : entitydef + "/ai")
+   "ai_attachments" : entitydef + "/demon/AI_NAME/attachments/")
+   "ai_actor_population" : decl + "/actorPopulation/actorpopulation/default/default_complete.decl")
+
+//interact decls
+   "interact_animweb" : animweb + "/interact")
+   "interact_entitydef" : entitydef + "/interact")
+
+//cineractive  decls
+   "cineractive_animweb" : animweb + "/cineractive")
+   "cineractive_entitydef" : entitydef + "/cineractive")
+
+//cinematic  decls
+   "cinematic_animweb" : animweb + "/interact")
+   "cinematic_entitydef" : entitydef + "/interact")
+
+//syncmelee  decls
+   "syncmelee_animweb" : animweb + "/syncmelee")
+   "syncmelee_entitydef" : entitydef + "/syncmelee")
+   "syncmelee_interaction" : decl + "/syncInteractions")
+
+//player  decls
+   "player_md6def" : "md6def/player/human/base/tp_body.md6"
+   "player_rig" : [source,'animation/player/human/base/assets/rig/marine.mb'
+
+//p4 configs
+   "p4config_source" : 'w:/ghost/source/p4config.txt')
+   "p4config_game" : 'w:/ghost/p4config.txt')
